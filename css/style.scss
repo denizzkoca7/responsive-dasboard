@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+$list-group-color:#A4A6B3;
+$list-group-hover:#4f515a;
+$sidebar-bg:#363740;
+$text-color:#252733;
+$green-bg: #29CC97;
+$yellow-bg:#FEC400;
+$red-bg: #F12B2C;
+$text-color: #252733;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+.sidebar-lists {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $list-group-color;
+}
+
+.table-p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #252733;
+}
+
+.span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #C5C7CD;
+    font-weight: 400;
+
+}
+
+.button {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 100px;
+}
+
+
+/*--------- Sidebar -------------*/
+
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    background-color: $sidebar-bg;
+    position: fixed;
+    width: 255px;
+
+    .logo {
+        padding: 37px 30px;
+        font-weight: bold;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+        color: $list-group-color;
+        opacity: 0.7
+    }
+
+    .list-group {
+        width: 255px;
+        margin-top: 20px;
+        @extend.sidebar-lists;
+
+
+        .list-group-bottom {
+            margin-top: 14px;
+        }
+
+        .list-group-top {
+            padding-bottom: 16px;
+            border-bottom: 1px solid $list-group-hover;
+        }
+
+        .list-group-item {
+            display: block;
+            background: transparent;
+            color: $list-group-color;
+            padding-left: 20px;
+            overflow-x: hidden;
+            padding: 18px 24px 18px 32px;
+
+            &:hover {
+                background: $list-group-hover;
+            }
+
+            img {
+                padding-right: 24px;
+            }
+        }
+
+        .list-active {
+            background: $list-group-hover;
+        }
+    }
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+    padding: 15px 15px;
+    background: #E5E5E5;
+    margin-left: 255px;
+
+    .navbar {
+        .navbar-toggler {
+            position: absolute;
+            top: 5px;
+            right: 20px;
+        }
+
+        .lists {
+            padding: 0 15px;
+
+            .dropdown {
+                display: none;
+            }
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0.3px;
+            color: $text-color;
+            margin: 0;
+            margin-left: 15px
+        }
+
+    }
+}
+
+/*  ----------Tickets--------*/
+
+
+.container-fluid {
+    @extend.table-p;
+    padding-left: 0;
+    padding-right: 0;
+
+    .desktop-none {
+        display: none;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+        color: #A4A6B3;
+    }
+
+    .table-content {
+        margin-top: 30px;
+        background: #ffff;
+        border: 1px solid #DFE0EB;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+        .table-header {
+            padding: 35px 45px;
+
+            .left {
+                h3 {
+                    font-weight: bold;
+                    font-size: 19px;
+                    line-height: 24px;
+                    letter-spacing: 0.4px;
+                    color: $text-color;
+                }
+            }
+
+            .right {
+                a {
+                    text-decoration: none;
+                    color: #4B506D;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.2px;
+                    padding: 0 10px;
+
+                    img {
+                        padding: 0 10px;
+                    }
+
+                    &:hover {
+                        color: $list-group-color;
+
+                        img {
+                            transform: scale(1.2);
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .table-box {
+            .row-head {
+                padding: 5px 4%;
+                border-bottom: 1px solid #E5E5E5;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0.2px;
+                color: #9FA2B4;
+
+            }
+
+
+
+            .row-table {
+                padding: 2.1% 4.9%;
+                border-bottom: 1px solid #E5E5E5;
+
+                &:hover {
+                    background-color: #E5E5E5;
+                }
+
+                .vertical {
+                    text-align: right;
+                }
+
+                .profile-img {
+                    padding-right: 20px;
+                }
+
+                span {
+                    @extend.span;
+                }
+
+                .btn {
+                    @extend.button;
+                }
+
+                .btn-yellow {
+                    background: $yellow-bg;
+
+                    &:hover {
+                        background-color: #fec3008a;
+                    }
+                }
+
+                .btn-red {
+                    background: $red-bg;
+
+                    &:hover {
+                        background-color: #f12b2ba8;
+                    }
+                }
+
+                .btn-green {
+                    background: $green-bg;
+
+                    &:hover {
+                        background-color: #29cc96b0;
+                    }
+                }
+            }
+        }
+
+        .table-bottom {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 24px 26px;
+
+            .per-page,
+            .pagination {
+                padding: 0 20px;
+                @extend.span;
+                font-size: 14px;
+            }
+
+            .per-page {
+                margin-right: 60px;
+            }
+
+            .pagination {
+                align-items: center;
+
+                img {
+                    padding: 0 5px;
+                }
+
+                span {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+/*------------ Tickets-End ---------*/
+
+
+
+/*----------- Media Query ----------*/
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    #sidebar-wrapper {
+        display: none;
+    }
+
+    #page-content-wrapper {
+        margin-left: 0;
+
+        .navbar {
+            .container-fluid {
+                h2 {
+                    text-align: center;
+                }
+
+                .desktop-none {
+                    display: flex;
+                    padding-left: 15px;
+                }
+
+                .lists {
+                    .border-end {
+                        display: contents;
+                    }
+
+                    .profile-list {
+                        display: contents;
+                    }
+
+                    .dropdown {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .vertical {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    #page-content-wrapper {
+        padding: 0;
+
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+
+            h2 {
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .table-content {
+                margin-left: 0;
+
+                .table-header {
+                    padding: 15px 10px;
+                }
+
+                .table-box {
+
+
+                    .mobile-none {
+                        display: none;
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-height: 600px) {
+    #sidebar-wrapper {
+        position: unset;
+    }
+    #page-content-wrapper{
+        margin-left: 0;
+    }
+}

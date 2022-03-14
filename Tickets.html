@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <div id="sidebar-wrapper">
+            <div class="logo d-flex align-items-center ">
+                <img class="pe-2" src="img/logo.svg" alt="logo">
+                Dashboard Kit
+            </div>
+            <div class="list-group ">
+                <div class="list-group-top">
+                    <a class="list-group-item" href="Overview.html">
+                        <img src="img/overview.svg">Overview
+                    </a>
+                    <a class="list-group-item  list-active" href="#">
+                        <img src="img/tickets.svg">Tickets
+                    </a>
+                    <a class="list-group-item " href="#">
+                        <img src="img/ideas.svg">Ideas
+                    </a>
+                    <a class="list-group-item " href="#">
+                        <img src="img/contacts.svg">Contacts
+                    </a>
+                    <a class="list-group-item " href="#">
+                        <img src="img/agents.svg">Agents
+                    </a>
+                    <a class="list-group-item " href="#">
+                        <img src="img/articles.svg">Articles
+                    </a>
+                </div>
+                <div class="list-group-bottom">
+                    <a class="list-group-item " href="#"><img src="img/settings.svg">Settings</a>
+                    <a class="list-group-item" href="#"><img src="img/subscription.svg">Subscription</a>
+                </div>
+
+            </div>
+        </div>
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="logo align-items-center desktop-none ">
+                        <img class="pe-2" src="img/logo.svg" alt="logo">
+                        Dashboard Kit
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <h2>Tickets</h2>
+                        <div class="lists d-flex justify-content-between align-items-center">
+
+                            <ul class="navbar-nav align-items-center me-4 pe-4 border-end ">
+
+                                <li class="nav-item "><a class="nav-link" href="#"><img src="img/search.svg" alt=""></a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#"><img src="img/new.svg" alt=""></a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav align-items-center profile-list ">
+                                <li class="nav-item"><a class="nav-link" href="#">Jess Ferdinand</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><img src="img/photo.svg" alt=""></a>
+                                </li>
+                            </ul>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sidebar
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item active" href="Overview.html">Overview</a></li>
+                                    <li><a class="dropdown-item" href="Tickets.html">Tickets</a></li>
+                                    <li><a class="dropdown-item" href="#">Ideas</a></li>
+                                    <li><a class="dropdown-item" href="#">Contacts</a></li>
+                                    <li><a class="dropdown-item" href="#">Agents</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li><a class="dropdown-item" href="#">Subscription</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="table-content">
+                    <div class="table-header d-flex justify-content-between align-items-center">
+                        <div class="left">
+                            <h3 class="">All Tickets</h3>
+                        </div>
+                        <div class="right">
+                            <a href="#"><img src="img/sort.svg">Sort</a>
+                            <a href="#"><img  src="img/filter.svg">Filter</a>
+                        </div>
+                    </div>
+                    <div class="table-box">
+                        <div class="row row-head align-items-center">
+                            <div class="col-4"> <span>Ticket details</span> </div>
+                            <div class="col-4 text-center"> <span>Customer name</span> </div>
+                            <div class="col-2 ps-3 mobile-none"> <span>Date</span> </div>
+                            <div class="col-1 ps-4"><span>Priority</span></div>
+                            <div class="col-1 ps-3"></div>
+                        </div>
+                        <div class="row row-table align-items-center">
+                            <div class="col-4 d-flex">
+                                <img class="profile-img" src="img/photo1.svg" alt="">
+                                <div class="name">
+                                    Contact Email not Linked <br>
+                                    <span>Updated 1 day ago</span>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                Tom Cruise <br>
+                                <span>on 24.05.2019</span>
+                            </div>
+                            <div class="col-2 mobile-none ps-3">
+                                May 26, 2019 <br>
+                                <span>6:30 PM</span>
+                            </div>
+                            <div class="col-1 ps-4">
+                                <a href="#" class="btn btn-red">HIGH</a>
+                            </div>
+                            <div class="col-1 vertical ps-5 text-center ">
+                                <a href=""><img src="img/vertical.svg"></a>
+                            </div>
+                        </div>
+                        <div class="row row-table align-items-center">
+                            <div class="col-4 d-flex">
+                                <img class="profile-img" src="img/photo2.svg" alt="">
+                                <div class="name">
+                                    Adding Images to Featured Posts<br>
+                                    <span>Updated 1 day ago</span>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                Matt Damon <br>
+                                <span>on 24.05.2019</span>
+                            </div>
+                            <div class="col-2 mobile-none ps-3">
+                                May 26, 2019 <br>
+                                <span>8:00 PM</span>
+                            </div>
+                            <div class="col-1 ps-4">
+                                <a href="#" class="btn btn-yellow">low</a>
+                            </div>
+                            <div class="col-1 ps-5 vertical text-center">
+                                <a href=""><img src="img/vertical.svg"></a>
+                            </div>
+                        </div>
+                        <div class="row row-table align-items-center">
+                            <div class="col-4 d-flex">
+                                <img class="profile-img" src="img/photo3.svg" alt="">
+                                <div class="name">
+                                    When will I be charged this month? <br>
+                                    <span>Updated 1 day ago</span>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                Robert Downey <br>
+                                <span>on 24.05.2019</span>
+                            </div>
+                            <div class="col-2 mobile-none ps-3">
+                                May 26, 2019 <br>
+                                <span>7:30 PM</span>
+                            </div>
+                            <div class="col-1 ps-4">
+                                <a href="#" class="btn btn-red">HIGH</a>
+                            </div>
+                            <div class="col-1 ps-5 vertical text-center">
+                                <a href=""><img src="img/vertical.svg"></a>
+                            </div>
+                        </div> 
+                        <div class="row row-table align-items-center">
+                            <div class="col-4 d-flex">
+                                <img class="profile-img" src="img/photo4.svg" alt="">
+                                <div class="name">
+                                    Payment not going through <br>
+                                    <span>Updated 2 day ago</span>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center" >
+                                Christian Bale <br>
+                                <span>on 24.05.2019</span>
+                            </div>
+                            <div class="col-2 mobile-none ps-3">
+                                May 25, 2019 <br>
+                                <span>5:00 PM</span>
+                            </div>
+                            <div class="col-1 ps-4">
+                                <a href="#" class="btn btn-green">normal</a>
+                            </div>
+                            <div class="col-1 ps-5 vertical text-center">
+                                <a href=""><img src="img/vertical.svg"></a>
+                            </div>
+                        </div>
+                        <div class="row row-table align-items-center">
+                            <div class="col-4 d-flex">
+                                <img class="profile-img" src="img/photo5.svg" alt="">
+                                <div class="name">
+                                    Unable to add replies<br>
+                                    <span>Updated 2 day ago</span>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                Henry Cavil <br>
+                                <span>on 24.05.2019</span>
+                            </div>
+                            <div class="col-2 mobile-none ps-3">
+                                May 25, 2019 <br>
+                                <span>4:00 PM</span>
+                            </div>
+                            <div class="col-1 ps-4">
+                                <a href="#" class="btn btn-red">HIGH</a>
+                            </div>
+                            <div class="col-1 ps-5 vertical text-center">
+                                <a href=""><img src="img/vertical.svg"></a>
+                            </div>
+                        </div>
+                        <div class="row row-table align-items-center">
+                            <div class="col-4 d-flex">
+                                <img class="profile-img" src="img/photo6.svg" alt="">
+                                <div class="name">
+                                    Downtime since last week <br>
+                                    <span>Updated 3 day ago</span>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                Chris Evans <br>
+                                <span>on 23.05.2019</span>
+                            </div>
+                            <div class="col-2 mobile-none ps-3">
+                                May 25, 2019 <br>
+                                <span>2:00 PM</span>
+                            </div>
+                            <div class="col-1 ps-4">
+                                <a href="#" class="btn btn-green">normal</a>
+                            </div>
+                            <div class="col-1 ps-5 vertical text-center">
+                                <a href=""><img src="img/vertical.svg"></a>
+                            </div>
+                        </div>
+                        <div class="row row-table align-items-center">
+                            <div class="col-4 d-flex">
+                                <img class="profile-img" src="img/photo7.svg" alt="">
+                                <div class="name">
+                                    Referral Bonus <br>
+                                    <span>Updated 4 day ago</span>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                Sam Smith <br>
+                                <span>on 22.05.2019</span>
+                            </div>
+                            <div class="col-2 mobile-none ps-3">
+                                May 25, 2019 <br>
+                                <span>11:30 PM</span>
+                            </div>
+                            <div class="col-1 ps-4">
+                                <a href="#" class="btn btn-yellow">low</a>
+                            </div>
+                            <div class="col-1 ps-5 vertical text-center">
+                                <a href=""><img src="img/vertical.svg"></a>
+                            </div>
+                        </div>
+                        <div class="row row-table align-items-center">
+                            <div class="col-4 d-flex">
+                                <img class="profile-img" src="img/photo8.svg" alt="">
+                                <div class="name">
+                                    How do I change my password? <br>
+                                    <span>Updated 6 day ago</span>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center ">
+                                Steve Rogers <br>
+                                <span>on 21.05.2019</span>
+                            </div>
+                            <div class="col-2 mobile-none ps-3">
+                                May 24, 2019 <br>
+                                <span>1:30 PM</span>
+                            </div>
+                            <div class="col-1 ps-4">
+                                <a href="#" class="btn btn-green">normal</a>
+                            </div> 
+                            <div class="col-1 ps-5 vertical text-center">
+                                <a href=""><img src="img/vertical.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-bottom">
+                        <div class="per-page">
+                            <span>Rows per page : 8</span>
+                            <a href="#"><img src="img/dropdown.png"></a>
+                        </div>
+                        <div class="pagination">
+                            <span>1-8 of 1240</span>
+                            <a href="#"><img src="img/arrow-left.png"></a>
+                            <a href="#"> <img src="img/arrow-right.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap.js"></script>
+
+</body>
+
+</html>
